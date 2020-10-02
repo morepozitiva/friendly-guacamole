@@ -1,0 +1,59 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+}
+a, button{
+	transition: all .3 ease-in;
+}
+body{
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucid;
+	font-size: 18px;
+}
+header{
+	max-width: 700px;
+	padding: 60px;
+	line-height: 2em;
+	margin: 0 auto;
+	text-align: center;
+	text-transform: uppercase;
+}
+header span{
+	color:#898f99;
+}
+header h1{
+	color: #0ec8cb;
+}
+header p{
+	color: #999999;
+}
+.container{
+    display: flex;
+	 flex-direction: row;
+	 justify-content: space-around;
+}
+.column{
+	margin: 10px;
+	text-align: center;
+	width: 30%;
+	padding: 60px 2px 60px 2px;
+	font-size: 18px;
+	transition: all .3s linear;
+}
+.column i.fa{
+	font-size: 6em;
+	padding: 0 0 20px 0;
+}
+.column:hover,
+.column:active,
+.column:focus{
+	background: #0ec8cb;
+	color: #ffffff;
+	
+}
+/* адаптация под мобильные устройства */
+@media screen and (max-width:768px){
+	.container{
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
